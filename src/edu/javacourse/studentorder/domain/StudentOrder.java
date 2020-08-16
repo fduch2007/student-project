@@ -6,6 +6,7 @@ public class StudentOrder {
     private Adult wife;
     private Child child;
 
+
     public long getStudentOrderId() {
         return studentOrderId;
     }

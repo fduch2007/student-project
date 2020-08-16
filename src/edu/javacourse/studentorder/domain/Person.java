@@ -7,8 +7,13 @@ public class Person {
     private String givenName;
     private String patronymic;
     private LocalDate dateOfBirth;
-    private String Address;
 
+    public Person(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
+        this.surName = surName;
+        this.givenName = givenName;
+        this.patronymic = patronymic;
+        this.dateOfBirth = dateOfBirth;
+    }
 
     public String getSurName() {
         return surName;

@@ -7,6 +7,16 @@ public class Address {
     private String extension;
     private String apartment;
 
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
+    }
+
+    private String Address;
+
     public String getPostCode() {
         return postCode;
     }
