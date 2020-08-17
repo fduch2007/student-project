@@ -7,6 +7,32 @@ public class Adult extends Person {
     private String passportSeria;
     private String passportNumber;
     private LocalDate issueDate;
+    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(String university) {
+        this.university = university;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
     private String issueDepartment;
     private String university;
     private String studentId;
