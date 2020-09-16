@@ -1,17 +1,24 @@
 package edu.javacourse.studentorder;
 
+import edu.javacourse.studentorder.dao.DictionaryDaoImpl;
 import edu.javacourse.studentorder.domain.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class SaveStudentOrder {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        List<Street> d = new DictionaryDaoImpl().findStreets("d");
+        for (Street s : d) {
+            System.out.println(s.getStreetName());
+        }
+
 //        StudentOrder so = new StudentOrder();
 //        long ans = saveStudentOrder(so);
 //        System.out.println(ans);
     }
 
-    static long saveStudentOrder(StudentOrder tudentOrder) {
+    static long saveStudentOrder(StudentOrder StudentOrder) {
         long answer = 199;
         System.out.println("saveStudentOrder:");
 

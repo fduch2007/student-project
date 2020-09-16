@@ -43,7 +43,7 @@ public class FakeCityRegisterChecker implements CityRegisterChecker {
             res.setExisting(true);
             res.setTemporal(true);
         }
-        System.out.println(res);
+       //System.out.println(res);
         return res;
     }
 }
